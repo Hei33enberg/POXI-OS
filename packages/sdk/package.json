@@ -1,0 +1,38 @@
+{
+  "name": "@poxi/sdk",
+  "version": "0.1.0",
+  "description": "Thin typed REST client for the Poxi venue generation and ticketing API.",
+  "license": "MIT",
+  "author": "Poxi / Hei33enberg",
+  "homepage": "https://poxi.guru",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hei33enberg/POXI-OS.git",
+    "directory": "packages/sdk"
+  },
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/types.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/types.d.ts",
+      "import": "./src/index.js"
+    }
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "poxi",
+    "sdk",
+    "ticketing",
+    "venue",
+    "3d",
+    "rest"
+  ],
+  "engines": {
+    "node": ">=18"
+  }
+}

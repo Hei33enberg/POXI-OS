@@ -1,0 +1,33 @@
+{
+  "name": "@poxi/cli",
+  "version": "0.1.0",
+  "description": "Command line for Poxi — generate 3D venues and check API connectivity.",
+  "license": "MIT",
+  "author": "Poxi / Hei33enberg",
+  "homepage": "https://poxi.guru",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hei33enberg/POXI-OS.git",
+    "directory": "packages/cli"
+  },
+  "type": "module",
+  "bin": {
+    "poxi": "./src/index.js"
+  },
+  "main": "./src/index.js",
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "poxi",
+    "cli",
+    "venue",
+    "ticketing",
+    "3d"
+  ],
+  "engines": {
+    "node": ">=18"
+  }
+}

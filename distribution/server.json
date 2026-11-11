@@ -1,0 +1,49 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
+  "name": "io.github.Hei33enberg/poxi",
+  "description": "AI-native 3D venue generator and 0% commission ticketing engine. Generate arenas, stadiums and clubs from a prompt, then hold seats atomically (600s TTL, no double-booking), check out through Stripe Connect, and scan tickets at the gate.",
+  "version": "0.1.0",
+  "websiteUrl": "https://poxi.guru",
+  "repository": {
+    "url": "https://github.com/Hei33enberg/POXI-OS",
+    "source": "github"
+  },
+  "command": "npx @poxi/mcp",
+  "tags": [
+    "venues",
+    "3d",
+    "ticketing",
+    "events",
+    "seating",
+    "stripe-connect",
+    "checkout",
+    "event-management"
+  ],
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "@poxi/mcp",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "POXI_API_URL",
+          "description": "Poxi API origin. All tools call ${POXI_API_URL}/v1/...",
+          "isRequired": false,
+          "default": "https://poxi.guru",
+          "format": "string"
+        },
+        {
+          "name": "POXI_API_KEY",
+          "description": "Optional bearer token for authenticated accounts.",
+          "isRequired": false,
+          "isSecret": true,
+          "format": "string"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "@poxi/mcp",
+  "version": "0.1.0",
+  "description": "Model Context Protocol server for Poxi — generate 3D venues, hold seats, scan tickets.",
+  "license": "MIT",
+  "author": "Poxi / Hei33enberg",
+  "homepage": "https://poxi.guru",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hei33enberg/POXI-OS.git",
+    "directory": "packages/mcp"
+  },
+  "type": "module",
+  "bin": {
+    "poxi-mcp": "index.js"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "poxi",
+    "venue",
+    "ticketing",
+    "3d"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}

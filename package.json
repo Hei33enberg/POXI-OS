@@ -1,0 +1,25 @@
+{
+  "name": "poxi-os",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Public developer ecosystem for Poxi — AI-native 3D venue generation and ticketing.",
+  "license": "MIT",
+  "author": "Poxi / Hei33enberg",
+  "homepage": "https://poxi.guru",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hei33enberg/POXI-OS.git"
+  },
+  "type": "module",
+  "workspaces": [
+    "packages/mcp",
+    "packages/sdk",
+    "packages/cli"
+  ],
+  "scripts": {
+    "check": "node --check packages/mcp/index.js && node --check packages/mcp/src/server.js && node --check packages/mcp/src/tools.js && node --check packages/mcp/src/http.js && node --check packages/sdk/src/index.js && node --check packages/cli/src/index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
